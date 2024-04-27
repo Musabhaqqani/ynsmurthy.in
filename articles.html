@@ -49,7 +49,16 @@
 	<link id="tt-themecss" rel="stylesheet" href="assets/css/theme.css">
 
 </head>
-
+<script>
+  function toggleCollapse(id) {
+    var content = document.getElementById(id);
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  }
+</script>
 
 <body id="body" class="tt-transition tt-boxed tt-smooth-scroll tt-magic-cursor">
 
@@ -207,16 +216,566 @@
 
 							<div class="text-xxlg">
 								<h2 class="anim-fadeinup">Research Publications</h2>
-								<ul>
-									<li class="anim-fadeinup">ABDC - B</li>
-									<li class="anim-fadeinup">ABDC - C</li>
-									<li class="anim-fadeinup">SCOPUS/WOS</li>
-									<li class="anim-fadeinup">SCOPUS</li>
-									<li class="anim-fadeinup">WOS/ESCI</li>
-									<li class="anim-fadeinup">UGC CARE</li>
-									<li class="anim-fadeinup">INTERNATION JOURNALS/PEER REVIEWED</li>
+								<button class="collapsible anim-fadeinup" onclick="toggleCollapse('journalDetails1')">ABDC - B</button>
+								<div class="content" id="journalDetails1">
+								<table>
+									<thead>
+									<tr>
+										<th class="tabhead">S.No</th>
+										<th class="tabhead">Name of the Journal (ABDC)</th>
+										<th class="tabhead">Title of the Paper</th>
+										<th class="tabhead">ISBN/ISSN No, Issue & Volume No</th>
+										<th class="tabhead">Year of Publication</th>
+										<th class="tabhead">Impact Factor</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+										<td>1</td>
+										<td>Academy of Marketing Studies Journal (ABDC Journal Category-B Indexed)</td>
+										<td>Evaluating the Effect of COVID-19 on Major World Indices: In relation to Gold, Silver, Crude Oil, and Bitcoin</td>
+										<td>ISSN: 1528-2678, Vol no:28, Issue no-2</td>
+										<td>January-2024</td>
+										<td>-----</td>
+									</tr>
+									<!-- Add more rows as needed -->
+									</tbody>
+								</table>
+								</div>
+								<button class="collapsible anim-fadeinup" onclick="toggleCollapse('journalDetails2')">ABDC - C</button>
+								<div class="content" id="journalDetails2">
+									<table>
+										<thead>
+										  <tr>
+											<th class="tabhead">S.No</th>
+											<th class="tabhead">Name of the Journal (ABDC)</th>
+											<th class="tabhead">Title of the Paper</th>
+											<th class="tabhead">ISBN/ISSN No, Issue & Volume No</th>
+											<th class="tabhead">Year of Publication</th>
+											<th class="tabhead">Impact Factor</th>
+										  </tr>
+										</thead>
+										<tbody>
+										  <tr>
+											<td>1</td>
+											<td>World Journal of Management and Economics (ABDC Journal Category-C Indexed)</td>
+											<td>Artificial Intelligence based Framework For Human Resource Development by Employing Chatbots</td>
+											<td>ISSN: 1819-8643, Vol no:16, Issue no-8, August-2023</td>
+											<td>----</td>
+											<td></td>
+										  </tr>
+										  <tr>
+											<td>2</td>
+											<td>European Economics Letters (ABDC Journal Category-C Indexed)</td>
+											<td>Work-Life Balance and Emotional Intelligence with Special Reference to Private Bank Employees</td>
+											<td>ISSN: 2323-5233, Vol no:13, Issue no-4, Page.No:95-110, August-2023</td>
+											<td>0.278</td>
+										  </tr>
+										  <tr>
+											<td>3</td>
+											<td>Empirical Economics Letters (ABDC Journal Category-C Indexed)</td>
+											<td>Certification Of Products In Ecommerce Websites Using Rule Based Decision Tree</td>
+											<td>ISSN: 1681-8997, Special Issue02, September-2021</td>
+											<td>0.91</td>
+										  </tr>
+										  <!-- Add more rows as needed -->
+										</tbody>
+									</table>									  
+								</div>
+								<button class="collapsible anim-fadeinup" onclick="toggleCollapse('journalDetails3')">SCOPUS/WOS</button>
+								<div class="content" id="journalDetails3">
+									<table>
+										<thead>
+										  <tr>
+											<th class="tabhead">S.No</th>
+											<th class="tabhead">Name of the Journal (ABDC)</th>
+											<th class="tabhead">Title of the Paper</th>
+											<th class="tabhead">ISBN/ISSN No, Issue & Volume No</th>
+											<th class="tabhead">Year of Publication</th>
+											<th class="tabhead">Impact Factor</th>
+										  </tr>
+										</thead>
+										<tbody>
+										  <tr>
+											<td>1</td>
+											<td>Journal of Advanced Zoology</td>
+											<td>Impulse Buying in the Digital Age: A Dimensional Study on Influencer Marketing Impact on Millennials</td>
+											<td>ISSN: 0253-7214, Vol no:44, Issue no-S3, Page.No:920-928</td>
+											<td>13th October, 2023</td>
+											<td>---</td>
+										  </tr>
+										</tbody>
+									  </table>
+																			
+								</div>
+								<button class="collapsible anim-fadeinup" onclick="toggleCollapse('journalDetails4')">SCOPUS</button>
+								<div class="content" id="journalDetails4">
+								<table>
+									<thead>
+									<tr>
+										<th class="tabhead">S.No</th>
+										<th class="tabhead">Name of the Journal (ABDC)</th>
+										<th class="tabhead">Title of the Paper</th>
+										<th class="tabhead">ISBN/ISSN No, Issue & Volume No</th>
+										<th class="tabhead">Year of Publication</th>
+										<th class="tabhead">Impact Factor</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+										<td>1</td>
+										<td>Tec Empresarial (Scopus-Q4)</td>
+										<td>An Investigation of Indian Consumers' Purchase Intentions Using Electronic Word-Of-Mouth</td>
+										<td>ISSN: 1659-2395, Vol no:18, Issue no-2, Page.No:1783-1799</td>
+										<td>2023</td>
+										<td>-----</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Journal of Harbin Engineering University (Scopus)</td>
+										<td>Impact of Talent Management on Organization Performance and Practice: A Study of Talent Management in IT sector in context of NCR</td>
+										<td>ISSN: 1006-7043, Vol no:44, Issue no-7, Page.No:1935-1942</td>
+										<td>July-2023</td>
+										<td>-----</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>International Journal of Professional Business Review (Scopus-Q2)</td>
+										<td>Effective role of human resource management policies within marketing organization: the impact on business and marketing strategy implementation</td>
+										<td>E-ISSN: 2525-3654, Vol no:8, Issue no-7, Page.No:1-12</td>
+										<td>28th June,2023</td>
+										<td>-----</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>Seybold Report (Scopus-Q3)</td>
+										<td>A study on impact of employee job embeddedness on employee Retention</td>
+										<td>ISSN: 1533-9211, Vol no:18, Issue no-3, Page.No:36-44</td>
+										<td>January 2023</td>
+										<td>-----</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>Pal Arch’s Journal of Archaeology of Egypt/ Egyptology (Scopus-Q3)</td>
+										<td>A Covid-19 impact analysis on the Migration of Rustic consumers to branded digital goods WRT Andhra Pradesh</td>
+										<td>ISSN:1567—214X, Vol.17, Issue-9, Page No: 3860-3866</td>
+										<td>December-2020</td>
+										<td>---</td>
+									</tr>
+									</tbody>
+								</table>
+								</div>
+								<button class="collapsible anim-fadeinup" onclick="toggleCollapse('journalDetails5')">UGC Care</button>
+								<div class="content" id="journalDetails5">
+								<table>
+									<thead>
+									<tr>
+										<th class="tabhead">S.No</th>
+										<th class="tabhead">Name of the Journal (UGC Care Group-1/Others)</th>
+										<th class="tabhead">Title of the Paper</th>
+										<th class="tabhead">ISBN/ISSN No, Issue & Volume No</th>
+										<th class="tabhead">Year of Publication</th>
+										<th class="tabhead">Impact Factor</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+										<td>1</td>
+										<td>Journal of Management & Entrepreneurship (UGC Care Listed)</td>
+										<td>The Impact of Mobile Marketing on Customer Retention and Engagement: A Literature Review</td>
+										<td>2229-5348, Vol. 17, No.2 (III), Page no:33-40, April-June 2023</td>
+										<td>-----</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Indian Institute of Industrial Engineering</td>
+										<td>An empirical effect analysis of workplace burnout management in information technology sector</td>
+										<td>0970-2555, Vol.No:52, Issue No:1, Page.No:77-83, January 2023</td>
+										<td>6.82</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>Journal of Management & Entrepreneurship</td>
+										<td>Network Marketing Attributes' Influence on Emerging Entrepreneurs- an Empirical Investigation of Safe Shopping</td>
+										<td>2229-5348, Vol. 16, No.4 (I), Page no:13-22, October - December 2022</td>
+										<td>-----</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>Journal of the Asiatic Society of Mumbai</td>
+										<td>A Study on “3M” Approach Towards Micro-Perineurial Thought Success</td>
+										<td>ISSN: 0972-0766, Vol. XCV, No. 3, Page no:102-110, January-2022</td>
+										<td>-----</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>Journal of Oriental Research Madras-The Kuppuswami Sastri Research Institute</td>
+										<td>A SIP & Lumpsum Analysis of Investment on Mutual Funds through Angel Broking Pvt Ltd</td>
+										<td>ISSN: 0022-3301, Vol. XCII, No.1, Page no:85-91, 30th December-2021</td>
+										<td>-----</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>NIU International Journal of Human Rights</td>
+										<td>An Empirical Impact of Employee Work Life Balance With Reference To Royal Park Hotel, Kakinada</td>
+										<td>ISSN: 2394 -0298, Volume 8(XXIII), Page No:144-150, November-2021</td>
+										<td>-----</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>Shodha Prabha</td>
+										<td>Pandemic Impact of Virtual Recruitment on Job Seekers – the New Paradigm</td>
+										<td>ISSN: Volume No:46, Issue:4, Page No:1-7, October-2021</td>
+										<td>-----</td>
+									</tr>
+									<tr>
+										<td>8</td>
+										<td>Wesleyan Journal</td>
+										<td>A comparative camel analysis of selected public and private sector banks in India</td>
+										<td>ISSN: 0975- 1386 , Volume. 14, No.2(III), Page No:140-147, September-2021</td>
+										<td>----</td>
+									</tr>
+									<tr>
+										<td>9</td>
+										<td>Sardar Patel Institute of Economic and Social Science Research- Journal of Anvesak</td>
+										<td>Millennials’ Perception & Gratification Impact Study On Digital Payment Systems In Krishna District</td>
+										<td>ISSN : 0378 – 4568, Volume. 51, No.2(II), Page No:29-39, December-2021</td>
+										<td>----</td>
+									</tr>
+									<tr>
+										<td>10</td>
+										<td>Shodh Samhita : Journal of Fundamental & Comparative Research</td>
+										<td>An Experiential Study On Stress Levels Of Employees Via Teleworking W.R.T Tata Consultancy Services, Bengaluru</td>
+										<td>ISSN: 2277-7067,Volume-VII, Issue No:8, Page No:22-30, August-2021</td>
+										<td>----</td>
+									</tr>
+									</tbody>
+								</table>
+								</div>
+								<button class="collapsible anim-fadeinup" onclick="toggleCollapse('journalDetails6')">International Journals / Peer Reviewed</button>
+								<div class="content" id="journalDetails6">
+								<table>
+									<thead>
+									<tr>
+										<th class="tabhead">S.No</th>
+										<th class="tabhead">Name of the Journal (Peer Reviewed)</th>
+										<th class="tabhead">Title of the Paper</th>
+										<th class="tabhead">ISBN/ISSN No, Issue & Volume No</th>
+										<th class="tabhead">Year of Publication</th>
+										<th class="tabhead">Impact Factor</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+										<td>1</td>
+										<td>EPRA International Journal of Economics, Business and Management Studies (EBMS)</td>
+										<td>The Impact of Brand Equity on Select FMCG Products at Hyderabad-An Empirical Study</td>
+										<td>ISSN: 2347-4378, Volume-11, Issue No:1, Page No:168-173, January-2024</td>
+										<td>8.078</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>International Journal of Advance Research and Innovative Ideas in Education</td>
+										<td>Training and Development Strategies: Assessing Their Influence on Employee Engagement and Performance</td>
+										<td>ISSN: 2395-4396, Volume-10, Issue No:1, Page No:140-147, January-2024</td>
+										<td>4.06</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>International Research Journal Of Modernization in Engineering Technology and Science</td>
+										<td>The Role of Corporate Governance in Emerging Markets</td>
+										<td>ISSN: 2582-5208, Volume-6, Issue No:1, Page No:1005-1009, January-2024</td>
+										<td>7.868</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>International Journal of Progressive Research in Engineering Management and Science</td>
+										<td>Assessing the Public Awareness on Financial Derivatives in Hyderabad Region</td>
+										<td>ISSN: 2583-1062, Volume-4, Issue No:1, Page No:119-122, January-2024</td>
+										<td>5.725</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>International Journal of Progressive Research in Engineering Management and Science</td>
+										<td>HRM 2.0: Navigating the Dynamic Intersection of Information Technology, Strategic Evolution, and Organizational Sustainability in the Digital Age</td>
+										<td>ISSN: 2583-1062, Volume-3, Issue No:12, Page No:374-379, December-2023</td>
+										<td>5.725</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>International Journal of Innovative Science and Research Technology</td>
+										<td>Unraveling the Interconnected Dynamics of Reward Systems: A Comprehensive Study on Organizational Efficiency across Diverse Industries and Geographies</td>
+										<td>ISSN: 2456-2165, Volume-8, Issue No:12, Page No:1924-1928, December-2023</td>
+										<td>7.176</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>EPRA International Journal of Economics, Business and Management Studies</td>
+										<td>Exploring HRIS Adoption and Performance Outcomes in Hyderabad-based IT Enterprises: A Case Study Approach</td>
+										<td>ISSN: 2347-4378, Volume-10, Issue No:12, Page No:112-117, December-2023</td>
+										<td>8.574</td>
+									</tr>
+									<tr>
+										<td>8</td>
+										<td>EPRA International Journal of Multidisciplinary Research (IJMR)</td>
+										<td>Exploring Compensation Management Strategies: A Comprehensive Analysis across Diverse Industries</td>
+										<td>ISSN: 2455-3662, Volume-9, Issue No:12, Page No:356-360, December-2023</td>
+										<td>8.55</td>
+									</tr>
+									<tr>
+										<td>9</td>
+										<td>EPRA International Journal of Economic and Business Review(JEBR)</td>
+										<td>Advancing Performance Management and Impact on Employee Performance – A Comprehensive Review and Future Directions</td>
+										<td>ISSN: 2347-9671, Volume-11, Issue No:12, Page No:54-58, December-2023</td>
+										<td>8.153</td>
+									</tr>
+									<tr>
+										<td>10</td>
+										<td>International Journal of Research in Engineering, Science and Management</td>
+										<td>Strategic perspective on human resources practices; A comprehensive analysis of employee promotion, competencies, and compensation dynamics.</td>
+										<td>ISSN: 2581-5792, Volume-6, Issue No:12, Page No:246-250, December-2023</td>
+										<td>5.719</td>
+									</tr>
+									<tr>
+										<td>11</td>
+										<td>Kalyan Bharathi-Journal of Indian History & Culture</td>
+										<td>A consumers’ happiness and perception study’ wrt sevamkr private limited(It’z My Choice), Rajahmundry, East Godavari
 
-								</ul>
+								District.</td>
+										<td>ISSN No. 0976-0822, Volume-36, No.9(II), Page No:94-100, October-2021</td>
+										<td>-----</td>
+									</tr>
+									<tr>
+										<td>12</td>
+										<td>Journal of Education: Rabindra Bharathi University</td>
+										<td>Influence of Gender Budgeting on Women Entrepreneurship in India</td>
+										<td>ISSN: 0972-7175, Volume-XXIII, Issue No-, Page No:, July-2021</td>
+										<td>-----</td>
+									</tr>
+									<tr>
+										<td>13</td>
+										<td>Journal of Modern Thamizh Research (A Quarterly International Multilateral Thamizh Research)</td>
+										<td>A Comprehensive Study on Employee Work Life Balance W.R.T Reliance Retail (Andhra Pradesh)</td>
+										<td>ISSN : 2321-984X, Special Issue, Page No:773-778, June-2021</td>
+										<td>-----</td>
+									</tr>
+									<tr>
+										<td>14</td>
+										<td>International Journal of Engineering Research & Technology (IJERT)</td>
+										<td>An Overview on Paperless Trading in India</td>
+										<td>ISSN:2278-0181, Volume 9, Issue 5, Page No:411-414, April-2021</td>
+										<td>-----</td>
+									</tr>
+									<tr>
+										<td>15</td>
+										<td>International Journal for Innovative Research in Multidisciplinary</td>
+										<td>A Behavioural Analysis of Customers in respect to Brand Preference w.r.t Swiggy & Zomato</td>
+										<td>ISSN: 2455-0620, Vol-7, Issue-3, PageNo:56-63, March-2021</td>
+										<td>6.719</td>
+									</tr>
+									<tr>
+										<td>16</td>
+										<td>Journal of Modern Thamizh Research (A Quarterly International Multilateral Thamizh Research)</td>
+										<td>Waste Management Initiatives and Challenges in India</td>
+										<td>ISSN:2321-984X, Special Issue, PageNo:630-635, February-2021</td>
+										<td>-----</td>
+									</tr>
+									<tr>
+										<td>17</td>
+										<td>International Journal of Science & Research</td>
+										<td>A Study on Influence of Employee Morale on Productivity in Steel Industry w.r.t Vizag Steel Ltd, Visakhaptnam</td>
+										<td>ISSN:2319-7064, Vol.10, Issue-1, Page No: 469 - 473, January-2021</td>
+										<td>7.583</td>
+									</tr>
+									<tr>
+										<td>18</td>
+										<td>Gorteria Journal (UGC-Group-II)</td>
+										<td>A Study on Student’s Attitude and Intention towards the purchase of luxury brands</td>
+										<td>ISSN: 0017-2294, Vol-33, Issue-12, Page No:579-588, December-2020</td>
+										<td>5.3</td>
+									</tr>
+									<tr>
+										<td>19</td>
+										<td>International Journal of Marketing and Technology</td>
+										<td>Marketing in the Digital Age</td>
+										<td>ISSN:2249-1058, Vol.6, Issue-6, Page No:63-76, June-2016</td>
+										<td>-----</td>
+									</tr>
+									<tr>
+										<td>20</td>
+										<td>International Journal of Marketing and technology</td>
+										<td>An Empirical Impact Of Green Marketing- Consumer’s Purchase Sensitivity In East Godavari District</td>
+										<td>ISSN:2249-1058, Vol.6, Issue-4, Page No:168-179, March-2016</td>
+										<td>5.81</td>
+									</tr>
+									<tr>
+										<td>21</td>
+										<td>International Journal of Technology & Innovation Management</td>
+										<td>The Role of Customer Relationship in Banking Sector</td>
+										<td>ISSN: 2394- 594X, Vol-2, Issue-1, Page No:30-34, March-2016</td>
+										<td>-----</td>
+									</tr>
+									<tr>
+										<td>22</td>
+										<td>International Research Journal of Marketing and Economics</td>
+										<td>The use of technology in Customer Relationship Management</td>
+										<td>ISSN: 2349-0314, Vol. 3, Issue 2, Page No:16-26, February-2016</td>
+										<td>2.988</td>
+									</tr>
+									<tr>
+										<td>23</td>
+										<td>International Journal of Marketing and technology</td>
+										<td>A Study on Customer Attitudes towards Service Quality Attributes of Public and Private Sectors Banks in East Godavari District</td>
+										<td>ISSN:2249-1058,Vol.26, Issue 1,Page No:24-38, January-2016</td>
+										<td>3.4</td>
+									</tr>
+									<tr>
+										<td>24</td>
+										<td>International Journey of Management, IT and Engineering</td>
+										<td>Challenges and Opportunities for Organizational Behaviour - New Millennium Perspective</td>
+										<td>ISSN:2249-0558,Vol.5,Issue-12,page No:277-287, December-2015</td>
+										<td>5.8</td>
+									</tr>
+									<tr>
+										<td>25</td>
+										<td>International Research Journal of Marketing and Economics</td>
+										<td>A Study On Customer Attitudes Towards Interaction Management Practices of Public and Private Sectors Banks in East Godavari District</td>
+										<td>ISSN:2349-0314,Vol. 2, Issue 11,Page No:29-42, November-2015</td>
+										<td>2.988</td>
+									</tr>
+									<tr>
+										<td>26</td>
+									
+
+								<td>International Journal of Science & Research</td>
+										<td>A Study on Perception of Quality of Work Life among Textile Manufacturing Workers in East Godavari District</td>
+										<td>ISSN:2319- 7064,Vol.4,Issue-10,Page No:1487-1491, October-2015</td>
+										<td>5.611</td>
+									</tr>
+									<tr>
+										<td>27</td>
+										<td>International Journal of Engineering Technology, Management and Applied Sciences</td>
+										<td>Employee Engagement Related to Employees’ Performance</td>
+										<td>ISSN:2349-4476,Vol.3, Issue-8.PageNo:153-157, September-2015</td>
+										<td>2.24</td>
+									</tr>
+									<tr>
+										<td>28</td>
+										<td>International Journal of Advance Research in Science & Engineering</td>
+										<td>A Study on Customer Relationship Practices in Commercial Banks</td>
+										<td>ISSN:2319- 8354, Vol.4, Issue-8,Page No:217-226, August-2015</td>
+										<td>1.142</td>
+									</tr>
+									</tbody>
+								</table>
+								</div>
+								<button class="collapsible anim-fadeinup" onclick="toggleCollapse('journalDetails7')">Book Chapters</button>
+								<div class="content" id="journalDetails7">
+								<table>
+									<thead>
+									<tr>
+										<th class="tabhead">S.No</th>
+										<th class="tabhead">Name of the Book Chapter</th>
+										<th class="tabhead">Title of the Paper</th>
+										<th class="tabhead">ISBN/ISSN No, Issue & Volume No</th>
+										<th class="tabhead">Year of Publication</th>
+										<th class="tabhead">Impact Factor</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+										<td>1</td>
+										<td>NCDT-2023 Conference Proceedings</td>
+										<td>A Study on the Impact of Employee Job Satisfaction in Healthcare Management</td>
+										<td>ISBN: 978-93-5917-000-8, Page No:108-118, 7th-8th July,2023</td>
+										<td>----</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Recent Developments and advancements in Finance (Book Chapter)-Immortal Publications</td>
+										<td>A Study on short-term performance analysis of IPO’s in Indian Stock Markets</td>
+										<td>ISBN: 978-93-5457-696-6, Page no:1-22, February-2021</td>
+										<td>----</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>Recent Developments and advancements in Finance (Book Chapter)-Immortal Publications</td>
+										<td>A Study on role of corporate governance in banking sector</td>
+										<td>ISBN: 978-93-5457-696-6, PageNo:164-171, February-2021</td>
+										<td>----</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>Sustainable Business Management Practices and Social Innovation (International Conference-Book Chapter)-Eureka Publications</td>
+										<td>Impact of COVID-19 on Consumers Purchasing Intention towards Electric Vehicles</td>
+										<td>ISBN: 978-81-950380-6-0, Page No:229-235, January-2021</td>
+										<td>----</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>New Paradigms In Business Management Practices (Book Chapter)</td>
+										<td>Corporate Social Responsibility- Major Core competency of corporate- an empirical study</td>
+										<td>ISBN: 979-8-576-82665-0,Vol-2, Page No:66-76, December-2020</td>
+										<td>----</td>
+									</tr>
+									</tbody>
+								</table>
+								</div>
+								<button class="collapsible anim-fadeinup" onclick="toggleCollapse('journalDetails8')">Web of Science/ESCI Journals</button>
+								<div class="content" id="journalDetails8">
+								<table>
+									<thead>
+									<tr>
+										<th class="tabhead">S.No</th>
+										<th class="tabhead">Name of the Journal(Web of Science/ESCI)</th>
+										<th class="tabhead">Title of the Paper</th>
+										<th class="tabhead">ISBN/ISSN No, Issue & Volume No</th>
+										<th class="tabhead">Year of Publication</th>
+										<th class="tabhead">Impact Factor</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+										<td>1</td>
+										<td>Business, Management and Economics Engineering(Vilnius Tech) (Web of Science/ESCI)</td>
+										<td>Artificial Intelligence In E-Commerce: A Literature Review</td>
+										<td>2669-2481, Vol.No:21, Issue:1, Page no:1027-1037, April 25, 2023</td>
+										<td>----</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Business, Management and Economics Engineering(Scopus-Q3) (Vilnius Tech)</td>
+										<td>Examining the Effects of Factors Influencing Organizational Citizenship Behavior With Respect to IT Managers in Gujarat</td>
+										<td>2669-2481, Vol.No:20, Issue:2, Page no:2154-2167, December 2022</td>
+										<td>-----</td>
+									</tr>
+									</tbody>
+								</table>
+								</div>
+								
+								<table id="journalTable" style="display: none;">
+									<thead>
+									  <tr>
+										<th>S.No</th>
+										<th>Name of the Journal (ABDC)</th>
+										<th>Title of the Paper</th>
+										<th>ISBN/ISSN No, Issue & Volume No</th>
+										<th>Year of Publication</th>
+										<th>Impact Factor</th>
+									  </tr>
+									</thead>
+									<tbody>
+									  <tr>
+										<td>1</td>
+										<td>Academy of Marketing Studies Journal (ABDC Journal Category-B Indexed)</td>
+										<td>Evaluating the Effect of COVID-19 on Major World Indices: In relation to Gold, Silver, Crude Oil, and Bitcoin</td>
+										<td>ISSN: 1528-2678, Vol no:28, Issue no-2</td>
+										<td>January-2024</td>
+										<td>-----</td>
+									  </tr>
+									  <!-- Add more rows as needed -->
+									</tbody>
+								  </table>
 								<h2 class="anim-fadeinup">Faculty Development Programmes</h2>
 								<ul>
 									<li class="anim-fadeinup">Participated and completed the Faculty Development
