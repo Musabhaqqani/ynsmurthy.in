@@ -277,9 +277,9 @@ p.text-xlg {
 	margin-bottom: 3.5% !important;
 }
 
-.text-xxlg {
+/* .text-xxlg {
 	font-size: calc(100% + 0.7vw) !important;
-}
+} */
 .text-xxlg p,
 p.text-xxlg {
 	margin-bottom: 3.5% !important;
