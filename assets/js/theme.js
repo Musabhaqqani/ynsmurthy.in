@@ -3244,63 +3244,63 @@
 	// ==========================================================================
 
 	// Display style switch button
-	$("#body-inner").prepend('<div class="tt-style-switch"><div class="tt-stsw-dark"><i class="far fa-moon"></i></div><div class="tt-stsw-light"><i class="fas fa-sun"></i></div></div>');
+	// $("#body-inner").prepend('<div class="tt-style-switch"><div class="tt-stsw-dark"><i class="far fa-moon"></i></div><div class="tt-stsw-light"><i class="fas fa-sun"></i></div></div>');
 
 	// Hide magic cursor on button hover
-	if ($("body").hasClass("tt-smooth-scroll")) {
-		$(".tt-style-switch").on("mouseenter", function() {
-			gsap.to($ball, { duration: 0.3, scale: 0, opacity: 0 });
-		}).on("mouseleave", function() {
-			gsap.to($ball, { duration: 0.3, scale: 1, opacity: $ballOpacity });
-		});
-	}
+	// if ($("body").hasClass("tt-smooth-scroll")) {
+	// 	$(".tt-style-switch").on("mouseenter", function() {
+	// 		gsap.to($ball, { duration: 0.3, scale: 0, opacity: 0 });
+	// 	}).on("mouseleave", function() {
+	// 		gsap.to($ball, { duration: 0.3, scale: 1, opacity: $ballOpacity });
+	// 	});
+	// }
 
 
-	if ($("#tt-light-style-default").length) {
+	// if ($("#tt-light-style-default").length) {
 
-		// Click on style switch
-		$(".tt-style-switch").on("click", function() {
-			$("body").toggleClass("tt-light-style-default-on");
-			$("body").hasClass("tt-light-style-default-on") ? (localStorage.setItem("lightstyle", "true"), 
-			$(".tt-style-switch")) : (localStorage.setItem("lightstyle", "false"));
+	// 	// Click on style switch
+	// 	$(".tt-style-switch").on("click", function() {
+	// 		$("body").toggleClass("tt-light-style-default-on");
+	// 		$("body").hasClass("tt-light-style-default-on") ? (localStorage.setItem("lightstyle", "true"), 
+	// 		$(".tt-style-switch")) : (localStorage.setItem("lightstyle", "false"));
 
-			location.reload();
-		});
+	// 		location.reload();
+	// 	});
 
-		// localStorage
-		var d = localStorage.getItem("lightstyle");
-		d == "true" ? ($("body").addClass("tt-light-style-default-on"),
-			$(".tt-style-switch")) : ($("body").removeClass("tt-light-style-default-on"));
+	// 	// localStorage
+	// 	var d = localStorage.getItem("lightstyle");
+	// 	d == "true" ? ($("body").addClass("tt-light-style-default-on"),
+	// 		$(".tt-style-switch")) : ($("body").removeClass("tt-light-style-default-on"));
 
-		// Toggle light stylesheet
-		if ($("body").hasClass("tt-light-style-default-on")) {
-			$("#tt-light-style-default").remove();
-		}
+	// 	// Toggle light stylesheet
+	// 	if ($("body").hasClass("tt-light-style-default-on")) {
+	// 		$("#tt-light-style-default").remove();
+	// 	}
 
-	} else {
+	// } else {
 
-		// Click on style switch
-		$(".tt-style-switch").on("click", function() {
-			$("body").toggleClass("tt-light-style-on");
-			$("body").hasClass("tt-light-style-on") ? (localStorage.setItem("lightstyle", "true"), 
-			$(".tt-style-switch")) : (localStorage.setItem("lightstyle", "false"));
+	// 	// Click on style switch
+	// 	$(".tt-style-switch").on("click", function() {
+	// 		$("body").toggleClass("tt-light-style-on");
+	// 		$("body").hasClass("tt-light-style-on") ? (localStorage.setItem("lightstyle", "true"), 
+	// 		$(".tt-style-switch")) : (localStorage.setItem("lightstyle", "false"));
 
-			location.reload();
-		});
+	// 		location.reload();
+	// 	});
 
-		// localStorage
-		var d = localStorage.getItem("lightstyle");
-		d == "true" ? ($("body").addClass("tt-light-style-on"),
-			$(".tt-style-switch")) : ($("body").removeClass("tt-light-style-on"));
+	// 	// localStorage
+	// 	var d = localStorage.getItem("lightstyle");
+	// 	d == "true" ? ($("body").addClass("tt-light-style-on"),
+	// 		$(".tt-style-switch")) : ($("body").removeClass("tt-light-style-on"));
 
-		// Toggle light stylesheet
-		if ($("body").hasClass("tt-light-style-on")) {
-			$("#tt-themecss").after('<link id="tt-light-style" rel="stylesheet" href="assets/css/light-style.css">');
-		} else {
-			$("#tt-light-style").remove();
-		}
+	// 	// Toggle light stylesheet
+	// 	if ($("body").hasClass("tt-light-style-on")) {
+	// 		$("#tt-themecss").after('<link id="tt-light-style" rel="stylesheet" href="assets/css/light-style.css">');
+	// 	} else {
+	// 		$("#tt-light-style").remove();
+	// 	}
 
-	}
+	// }
 
 	// End template style switch
 	// ==========================
@@ -3335,21 +3335,11 @@
 
 
 
-	// ================================================================
-	// Begin demo code (for DEMO SITE ONLY!!!)
-	// Note: GSAP and ScrollTrigger plugin required!
-	// ================================================================ 
-
-	// Demo button 
-	// =============
-
-	// Append button
 	var $tt_demo_btn = '<a href="https://1.envato.market/nui" class="tt-demo-btn" target="_blank" rel="noopener"><div class="tt-demo-btn-img"><img src="https://stuff.themetorium.net/img/envato-logo-white.png" alt="Download!"></div><div class="tt-demo-btn-text">Buy This<br> Template!</div></a>';
 
 	$("#body-inner").append($tt_demo_btn);
 
 
-	// Activate button on menu trigger click (classic menu mobile trigger and overlay menu trigger)
 	$(".tt-ol-menu-toggle-btn-text, .tt-ol-menu-toggle-btn, .tt-m-menu-toggle-btn-text, .tt-m-menu-toggle-btn").on("click", function() {
 		$("body").toggleClass("tt-demo-btn-active");	
 		if ($("body").hasClass("tt-demo-btn-active")) {
@@ -3359,7 +3349,6 @@
 		}
 	});
 
-	// On menu link click (classic menu and overlay menu)
 	$(".tt-overlay-menu a, .tt-main-menu-list a, .tt-logo a")
 	.not('[target="_blank"]') // omit from selection
 	.not('[href^="#"]') // omit from selection
@@ -3414,10 +3403,6 @@
 		gsap.to($ball, { duration: 0.3, scale: 1, opacity: $ballOpacity });
 	});
 
-
-	// Demo images 
-	// ============
-
 	var $demoGridDarkImage = $(".tt-demo-dark-img");
 	var $demoGridLightImage = $(".tt-demo-light-img");
 
@@ -3429,9 +3414,6 @@
 		$demoGridLightImage.remove();
 	}
 
-	// ================================================================
-	// End demo code (for DEMO SITE ONLY!!!)
-	// ================================================================
 
 
 
