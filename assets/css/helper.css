@@ -6118,3 +6118,26 @@ body.tt-boxed .tt-wrap .tt-row {
 		flex-direction: column-reverse !important;
 	}
 }
+
+
+/* visitor count */
+.website-counter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding:2vw;
+  }
+.website-counter {
+	background-color: #ff4957;
+	color: white;
+	border-radius: 30px;
+	font-weight: 700;
+	font-size: 25px;
+	margin-top: 10px;
+  }
+  @media (max-width: 900px) {
+	.website-counter{
+		background-color:transparent
+	}
+}
