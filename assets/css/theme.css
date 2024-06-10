@@ -6269,6 +6269,82 @@ body.tt-portfolio-hover-carousel-on.tt-light-bg-on  #ball .ball-drag::after {
 }
 
 
+.tt-section {
+    background-image: url('./assets/img/background-aws.png');
+    background-size: cover;
+    padding: 100px 20px;
+}
+
+.tt-section-inner {
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.tt-heading {
+    margin-bottom: 30px;
+}
+
+.tt-heading-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.tt-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tt-col-lg-4, .tt-col-lg-8 {
+    padding: 15px;
+}
+
+.tt-col-lg-4 {
+    flex: 1 1 100%;
+    max-width: 100%;
+}
+
+.tt-col-lg-8 {
+    flex: 2 1 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+    .tt-col-lg-4 {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+
+    .tt-col-lg-8 {
+        flex: 0 0 66.6667%;
+        max-width: 66.6667%;
+    }
+}
+
+.qualification {
+    margin-bottom: 20px;
+}
+
+.qualification h3 {
+    font-size: 1.5rem;
+    color: #555;
+    margin: 0 0 5px 0;
+}
+
+.qualification p {
+    font-size: 1rem;
+    color: #777;
+    margin: 0;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #333;
+}
+
 /* ------------------------------------------------------------- *
  * Project info list
 /* ------------------------------------------------------------- */
