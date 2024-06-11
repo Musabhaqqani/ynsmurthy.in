@@ -170,6 +170,10 @@ body {
 	background-color: #555;
 }
 
+.table-wrapper {
+    overflow-x: auto;
+}
+
 .tabhead {
 	font-size: 14px;
 	text-transform: uppercase;
@@ -6340,7 +6344,7 @@ body.tt-portfolio-hover-carousel-on.tt-light-bg-on  #ball .ball-drag::after {
 
 .highlight {
     font-weight: bold;
-    color: #333;
+	color: white;
 }
 
 /* ------------------------------------------------------------- *
